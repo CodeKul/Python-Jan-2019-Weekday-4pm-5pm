@@ -38,3 +38,51 @@ def addition(a,b):
 
 res = addition(10, 20)
 print('Calculation: {}'.format(res))
+
+
+def is_even(num):
+    if num % 2 == 0:
+        return '{} is even'.format(num)
+    else:
+        return '{} is odd'.format(num)
+
+
+print(is_even(15))
+
+
+def display_number(num):
+    print('address of num: {}'.format(id(num)))
+    num = 200
+    print('after change address of num: {}'.format(id(num)))
+    print(num)
+
+my_num = 100
+print('address of my_num: {}'.format(id(my_num)))
+display_number(my_num)
+print(my_num)
+
+
+def display_list(list):
+    print('address of list: {}'.format(id(list)))
+    list = [4,5,6]
+    print('after change address of list: {}'.format(id(list)))
+    print(list)
+
+
+my_list = [1,2,3]
+print('address of my_list: {}'.format(id(my_list)))
+display_list(my_list)
+print(my_list)
+
+
+def swap_two_values(a, b):
+    temp = a
+    a = b
+    b = temp
+    print('x: {}\ny: {}'.format(a, b))
+
+
+x = 10
+y = 20
+swap_two_values(x, y)
+
