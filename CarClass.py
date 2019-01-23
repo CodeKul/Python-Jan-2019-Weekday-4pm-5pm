@@ -74,7 +74,7 @@ print(swift.speed)
 swift.start()
 while True:
     num = random.randint(0, 10)
-    print(num)
+    # print(num)
     if num == 0:
         swift.turn_off()
         break
